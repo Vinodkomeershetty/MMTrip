@@ -11,17 +11,13 @@ class ReviewPage extends Page
 {
     MmtUtils mmt=new MmtUtils()
     static at={
-        1==1
-//        title=="Flights Review"
+        title=="Flights Review"
     }
     static content={
         ReviewPageObj{module ReviewModule}
     }
     def verifyDepartureDateinReviewPage(String depttime,String shrtsrc,String lngsrc){
         waitFor {ReviewPageObj.departureDate.isDisplayed()}
-        println depttime
-        println shrtsrc
-        println lngsrc
         def temp=ReviewPageObj.departureDate.text().split("\n")
         print temp
         print temp[0]
