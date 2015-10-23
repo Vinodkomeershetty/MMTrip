@@ -14,26 +14,36 @@ class TravellersPage extends Page {
         Travellersobj{module TravellersModule}
     }
 
-    public void clickOnContinueToPaymentButton(){
-        js.exec "scroll(0,300);"
-        if(Travellersobj.continueToPaymentButton.displayed) {
+    def clickOnContinueToPaymentButton(){
+        try{
+            if(Travellersobj.continueToPaymentButton.displayed) {
             Travellersobj.continueToPaymentButton.click()
         }
+        else {
+            print " "
+
+        }
+
+        }
+        catch (Exception e) {
+            print "ex"
+            print "Unable to find the element"
+        }
     }
-    public passValuesToFirstName(String fname)
+    def passValuesToFirstName(String fname)
     {
         Travellersobj.firstNameField<<fname
     }
-    public passValuesToAgeField(String age)
+    def passValuesToAgeField(String age)
     {
         Travellersobj.ageField<<age
     }
-    public passValuesToPhoneField(String number1)
+    def passValuesToPhoneField(String number1)
     {
         Travellersobj.phoneNumberField<<number1
     }
 
-    public passValuesToLastName(String lname)
+    def passValuesToLastName(String lname)
     {
         Travellersobj.lastNameField<<lname
     }
