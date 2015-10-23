@@ -72,7 +72,5 @@ class MakeMyTripTestCases extends GebReportingSpec{
         when: "Clicked on Continue to Payment Button"
         clickOnContinueToPaymentButton()
         then: "User is Navigated to Payments Page"
-//        verifyDetailsInPaymentsPage("Bangalore","Hyderabad",duration_time,dept_time,arrival_time,grandTotal)
-
     }
 }
