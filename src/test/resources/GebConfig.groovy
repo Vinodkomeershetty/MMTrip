@@ -8,9 +8,11 @@ import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.phantomjs.PhantomJSDriver
 
 waiting {
-	timeout = 10
+	timeout = 14
+	retryInterval = 1
 }
 
+atCheckWaiting = true
 environments {
 	
 	// run via “./gradlew chromeTest”
