@@ -9,7 +9,7 @@ import makemytripmodules.PaymentsModule
 class PaymentsPage extends Page{
 
     static at = {
-        1==1
+        title=="MakeMytrip Payment : Safe and Secure"
     }
 
     static content={
