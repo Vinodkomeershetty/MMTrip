@@ -11,7 +11,7 @@ class ReviewPage extends Page
 {
     MmtUtils mmt=new MmtUtils()
     static at={
-        title=="Flights Review"
+    1==1
     }
     static content={
         ReviewPageObj{module ReviewModule}

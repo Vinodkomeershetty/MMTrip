@@ -8,7 +8,7 @@ import makemytripmodules.TravellersModule
  */
 class TravellersPage extends Page {
     static at={
-        1==1
+        title=="Flights Traveller"
     }
     static content={
         Travellersobj{module TravellersModule}

@@ -39,7 +39,7 @@ class SearchResultsPage extends Page {
         print adulCount
         str[1].trim().contentEquals(adulCount)
     }
-    def verifyDepartureSearchRecord(def s1)
+    def verifyDepartureSearchRecord(String s1)
     {
         try {
             String li = SearchResultsobj.departureRecordTexts.text()
