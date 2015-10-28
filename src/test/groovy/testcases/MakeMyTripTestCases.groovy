@@ -29,7 +29,6 @@ class MakeMyTripTestCases extends GebReportingSpec{
     def "Search and Book For One Way Trip Ticket using Guest Login"(){
 
         at MakeMyTripLaunchPage
-
         when: "User tries to search for a One way trip flight ticket"
         clickOnOneWayOption()
         passValuestoFromField("Bangalore, India (BLR)")
@@ -37,9 +36,8 @@ class MakeMyTripTestCases extends GebReportingSpec{
         selectStartDate startingdate_tweek
         addAdults(1)
         clickOnSearchFlightButton()
-
+        at SearchResultsPage
         then: "Appropriate search results should be displayed"
-
         verifyFromAndToAddress "Bangalore", "Hyderabad"
         verifyDepartureDate(startingdate_tweek)
         verifyAdultCount("01")
@@ -59,8 +57,6 @@ class MakeMyTripTestCases extends GebReportingSpec{
 
         when: "Clicked on Book Button"
         clickOnBookButton()
-
-
         then:"User is Navigated to Review Page and appropriate details are displayed in Review Page"
         verifyDepartureDateinReviewPage(dept_time,"BLR", "Bangalore")
         verifyArrivalDateinReviewPage(arrival_time,"HYD", "Hyderabad")
@@ -84,7 +80,6 @@ class MakeMyTripTestCases extends GebReportingSpec{
         clickOnContinueToPaymentButton()
 
         then: "User is Navigated to Payments Page"
-
         print "Successfull"
     }
 }
