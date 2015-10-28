@@ -59,7 +59,7 @@ class ReviewPage extends Page
     def clickOnIAgreeButton(){
         waitFor {ReviewPageObj.iAgreebutton.isDisplayed()}
         if(ReviewPageObj.iAgreebutton.displayed)
-            ReviewPageObj.iAgreebutton.click()
+            ReviewPageObj.iAgreebutton.click(TravellersPage)
     }
 
     def  passValuesTOEmailField(String email){

@@ -17,7 +17,7 @@ class TravellersPage extends Page {
     def clickOnContinueToPaymentButton(){
         try{
             if(Travellersobj.continueToPaymentButton.displayed) {
-            Travellersobj.continueToPaymentButton.click()
+            Travellersobj.continueToPaymentButton.click(PaymentsPage)
         }
         else {
             print " "

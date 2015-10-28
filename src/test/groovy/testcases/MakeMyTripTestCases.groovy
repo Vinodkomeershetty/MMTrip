@@ -37,7 +37,6 @@ class MakeMyTripTestCases extends GebReportingSpec{
         selectStartDate startingdate_tweek
         addAdults(1)
         clickOnSearchFlightButton()
-        at SearchResultsPage
 
         then: "Appropriate search results should be displayed"
 
@@ -61,7 +60,6 @@ class MakeMyTripTestCases extends GebReportingSpec{
         when: "Clicked on Book Button"
         clickOnBookButton()
 
-        at ReviewPage
 
         then:"User is Navigated to Review Page and appropriate details are displayed in Review Page"
         verifyDepartureDateinReviewPage(dept_time,"BLR", "Bangalore")
@@ -75,7 +73,6 @@ class MakeMyTripTestCases extends GebReportingSpec{
         clickOnContinueButtoninReviewPage()
         clickOnIAgreeButton()
 
-        at TravellersPage
         then: "Verify details in Travellers Page"
         verifyDetailsinTravellersPage("Bangalore","Hyderabad",duration_time,dept_time,arrival_time,grandTotal)
 
@@ -85,8 +82,6 @@ class MakeMyTripTestCases extends GebReportingSpec{
         passValuesToAgeField("32")
         passValuesToPhoneField("9885500590")
         clickOnContinueToPaymentButton()
-
-        at PaymentsPage
 
         then: "User is Navigated to Payments Page"
 

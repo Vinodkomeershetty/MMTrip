@@ -57,7 +57,7 @@ class SearchResultsPage extends Page {
         li.trim().contentEquals(s1)
     }
     def clickOnBookButton(){
-        SearchResultsobj.bookButton.click()
+        SearchResultsobj.bookButton.click(ReviewPage)
     }
     def clickOnShowDetails(){
         SearchResultsobj.showDetailsButton.click()

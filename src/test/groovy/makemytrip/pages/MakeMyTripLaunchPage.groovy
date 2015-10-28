@@ -50,7 +50,7 @@ class MakeMyTripLaunchPage extends Page{
         }
     }
     def  clickOnSearchFlightButton(){
-        MakeMyTripLaunchPageObjects.searchFlightsButton.click()
+        MakeMyTripLaunchPageObjects.searchFlightsButton.click(SearchResultsPage)
     }
     def clickOnOneWayOption(){
         MakeMyTripLaunchPageObjects.oneWayOption.click()
