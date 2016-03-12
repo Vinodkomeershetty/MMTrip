@@ -12,5 +12,6 @@ class PaymentsModule extends Module
         timeanddate{$(".city_revwinfo.pull-left.ng-binding")}
         amount{$("#top_rail_totalAmount")}
         fdgkudfgodgo
+        hhtdddut
     }
 }
