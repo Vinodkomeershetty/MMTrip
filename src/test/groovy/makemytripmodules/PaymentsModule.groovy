@@ -13,5 +13,6 @@ class PaymentsModule extends Module
         amount{$("#top_rail_totalAmount")}
         fdgkudfgodgo
         hhtdddut
+         //Git learning
     }
 }
