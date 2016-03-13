@@ -9,14 +9,16 @@ import makemytripmodules.PaymentsModule
 class PaymentsPage extends Page{
 
     static at = {
-        title=="MakeMytrip Payment : Safe and Secure   " 
-		
+        title=="MakeMytrip Payment : Safe and Secure" 
     }
 
     static content={
         PaymentsPageObj{module PaymentsModule}
     }
     def verifyDetailsInPaymentsPage(String src,String dest,String duration,String deptime,String arr,String amt){
+	
+	
+	
         def temp=PaymentsPageObj.cityandduration.text()
         temp[0].contentEquals(src);
         temp[1].contentEquals(dest);
