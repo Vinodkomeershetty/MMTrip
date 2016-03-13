@@ -11,5 +11,6 @@ class PaymentsModule extends Module
         cityandduration{$("span.city_time_info>span:nth-of-type(2)")}
         timeanddate{$(".city_revwinfo.pull-left.ng-binding")}
         amount{$("#top_rail_totalAmount")}
+         //Git learning
     }
 }
