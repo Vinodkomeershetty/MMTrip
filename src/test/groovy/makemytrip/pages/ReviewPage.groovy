@@ -72,7 +72,6 @@ class ReviewPage extends Page
         {
             print " "
         }
-		
-		sdscsfcf
+	
     }
 }
