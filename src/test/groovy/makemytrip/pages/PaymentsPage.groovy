@@ -18,8 +18,8 @@ class PaymentsPage extends Page{
     }
     def verifyDetailsInPaymentsPage(String src,String dest,String duration,String deptime,String arr,String amt){
         def temp=PaymentsPageObj.cityandduration.text()
-        temp[0].contentEquals(src)
-        temp[1].contentEquals(dest)
+        temp[0].contentEquals(src);
+        temp[1].contentEquals(dest);
         temp[2].contentEquals(duration)
 
         def temp1=PaymentsPageObj.timeanddate.text()
