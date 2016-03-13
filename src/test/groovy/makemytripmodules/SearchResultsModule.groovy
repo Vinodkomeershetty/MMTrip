@@ -25,7 +25,7 @@ class SearchResultsModule  extends Module {
         itenararysrc{$(".itineary_departure",0)}
         itenararydest{$(".itineary_departure",1)}
         itenararyduration{$(".itineary_duration")}
-//        adultCount1{val->$(".modify_captions",text:"ADULT").next("p").children("span",text:val)}
+        adultCount1{val->$(".modify_captions",text:"ADULT").next("p").children("span",text:val)}
 
     }
 }
