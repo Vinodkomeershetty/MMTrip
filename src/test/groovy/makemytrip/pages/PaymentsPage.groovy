@@ -10,6 +10,7 @@ class PaymentsPage extends Page{
 
     static at = {
         title=="MakeMytrip Payment : Safe and Secure" 
+		
     }
 
     static content={
